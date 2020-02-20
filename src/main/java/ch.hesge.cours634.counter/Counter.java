@@ -10,11 +10,7 @@ public class Counter implements ICounter {
 
     @java.lang.Override
     public void add(int step) throws CounterException {
-        if(step < 0){
-            throw new CounterException("Valeur negative");
-        }else{
             v = v + step;
-        }
     }
 
     @java.lang.Override
