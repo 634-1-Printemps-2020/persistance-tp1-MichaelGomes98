@@ -30,6 +30,6 @@ public class UpperLimitedPositiveCounter extends Counter {
 
     @Override
     public int getValue() {
-        return super.getValue();
+        return this.v;
     }
 }
