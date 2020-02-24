@@ -1,7 +1,14 @@
 package ch.hesge.cours634.counter;
 
 public class Counter implements ICounter {
-    int v;
+    private int v;
+
+    public Counter() {
+    }
+
+    public Counter(int v) {
+        this.v = v;
+    }
 
     @java.lang.Override
     public void inc() throws CounterException {
@@ -17,4 +24,12 @@ public class Counter implements ICounter {
     public int getValue() {
         return v;
     }
+
+    @Override
+    public String toString() {
+        return "Counter{" +
+                "v=" + v +
+                '}';
+    }
+
 }
